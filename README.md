@@ -12,17 +12,17 @@ Formas de obter a chave de acesso:
   4) Coloque o seu "ID de cliente" e o "Sua senha de cliente" nos respectivos campos e clique em "Teste você mesmo!".
   5) Vá até o campo cabeçalho e copie a sua autorização.
   
-  {
-    "Accept": "application/json, text/plain, */*",
-    "Authorization": "SUA CHAVE DE ACESSO",
-    "Content-Type": "application/json;charset=utf-8"
-  }
+    {
+      "Accept": "application/json, text/plain, */*",
+      "Authorization": "SUA CHAVE DE ACESSO",
+      "Content-Type": "application/json;charset=utf-8"
+    }
 
   6) Cole a autorização no campo headers dentro do script.
 
-  headers = {
-      "Authorization": "COLE AQUI A SUA CHAVE AUTORIZAÇÃO",
-      'user-agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36'
-  }
+    headers = {
+        "Authorization": "COLE AQUI A SUA CHAVE AUTORIZAÇÃO",
+        'user-agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36'
+    }
 
   7) Execute o código.
