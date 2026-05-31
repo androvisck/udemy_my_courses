@@ -53,14 +53,15 @@ def main():
     try:
         print("Obtendo token de acesso...")
         token = get_udemy_token()
-        
+        print(token)
+              
         print("Coletando cursos da API...")
         dados = fetch_all_subscribed_courses(token)
         
         if dados:
             df = pd.DataFrame(dados)
-            df.to_csv('meus_cursos.csv', index=False, encoding='utf-8')
-            print(f"Sucesso! {len(dados)} cursos salvos em 'meus_cursos.csv'.")
+            df.to_csv('my_courses.csv', index=False, encoding='utf-8')
+            print(f"Sucesso! {len(dados)} cursos salvos em 'my_courses.csv'.")
         else:
             print("Nenhum curso encontrado.")
             
